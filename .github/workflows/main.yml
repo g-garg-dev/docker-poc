@@ -33,7 +33,7 @@ jobs:
       env:
         ECR_REGISTRY: 125394364733.dkr.ecr.ap-south-1.amazonaws.com
         ECR_REPOSITORY: oms-gg-test
-        IMAGE_TAG: nodejs_demo_image
+        IMAGE_TAG: 1.1
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
